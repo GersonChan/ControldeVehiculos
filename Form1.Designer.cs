@@ -47,6 +47,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.bntDatosAlquiler = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtMarca
@@ -79,7 +80,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(316, 324);
+            this.btnGuardar.Location = new System.Drawing.Point(212, 348);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 5;
@@ -206,11 +207,22 @@
             this.label10.TabIndex = 18;
             this.label10.Text = "Datos del vehiculo";
             // 
+            // bntDatosAlquiler
+            // 
+            this.bntDatosAlquiler.Location = new System.Drawing.Point(461, 348);
+            this.bntDatosAlquiler.Name = "bntDatosAlquiler";
+            this.bntDatosAlquiler.Size = new System.Drawing.Size(91, 35);
+            this.bntDatosAlquiler.TabIndex = 19;
+            this.bntDatosAlquiler.Text = "Ingresar datos de alquler";
+            this.bntDatosAlquiler.UseVisualStyleBackColor = true;
+            this.bntDatosAlquiler.Click += new System.EventHandler(this.bntDatosAlquiler_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bntDatosAlquiler);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -258,6 +270,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button bntDatosAlquiler;
     }
 }
 

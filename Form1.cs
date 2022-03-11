@@ -38,6 +38,7 @@ namespace ControldeVehiculos
             vehiculo.placa = txtPlaca.Text;
             vehiculo.marca = txtMarca.Text;
             vehiculo.modelo = Convert.ToInt16(txtModelo.Text);
+            vehiculo.color = txtColor.Text;
             vehiculo.precio = Convert.ToInt16(txtPreciok.Text);
             cliente.nit = txtNit.Text;
             cliente.nombre = txtNombre.Text;
@@ -89,6 +90,12 @@ namespace ControldeVehiculos
                 }
             }
             writer.Close();
+        }
+
+        private void bntDatosAlquiler_Click(object sender, EventArgs e)
+        {
+            FrmAlquiler frmAlquiler = new FrmAlquiler();
+            frmAlquiler.Show();
         }
     }
 }
