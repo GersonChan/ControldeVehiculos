@@ -39,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dtpFechaAlquiler = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaDevolucion = new System.Windows.Forms.DateTimePicker();
+            this.btnMostrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNit
@@ -131,11 +132,22 @@
             this.dtpFechaDevolucion.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaDevolucion.TabIndex = 12;
             // 
+            // btnMostrar
+            // 
+            this.btnMostrar.Location = new System.Drawing.Point(483, 363);
+            this.btnMostrar.Name = "btnMostrar";
+            this.btnMostrar.Size = new System.Drawing.Size(103, 39);
+            this.btnMostrar.TabIndex = 13;
+            this.btnMostrar.Text = "Mostar Datos";
+            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
             // FrmAlquiler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.dtpFechaDevolucion);
             this.Controls.Add(this.dtpFechaAlquiler);
             this.Controls.Add(this.label5);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtpFechaAlquiler;
         private System.Windows.Forms.DateTimePicker dtpFechaDevolucion;
+        private System.Windows.Forms.Button btnMostrar;
     }
 }

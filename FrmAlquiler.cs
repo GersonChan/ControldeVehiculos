@@ -46,5 +46,11 @@ namespace ControldeVehiculos
             }
             writer.Close();
         }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            FrmMostrar mostrar = new FrmMostrar();
+            mostrar.ShowDialog();
+        }
     }
 }
